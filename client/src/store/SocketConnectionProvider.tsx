@@ -77,7 +77,7 @@ export default function SocketConnectionProvider(
 
 	useEffect(() => {
 		if (sessionId) {
-			const socket = new WebSocket("wss://tarkov-map-server.vercel.app");
+			const socket = new WebSocket("https://https://tarkov-map-server.onrender.com/");
 			// const socket = new WebSocket('ws://localhost:5000/');
 			setSocket(socket);
 			socket.onopen = () => {
