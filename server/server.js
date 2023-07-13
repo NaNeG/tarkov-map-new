@@ -99,4 +99,4 @@ function broadcastHandler(ws, msg) {
 }
 
 // app.listen(5000, () => console.log("started"));
-app.listen(process.env.PORT, () => console.log('started'));
+app.listen(process.env.PORT || 3000, () => console.log(`started on ${process.env.PORT}`));
